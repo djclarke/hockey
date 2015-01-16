@@ -1,3 +1,9 @@
 eclipse.preferences.version=1
+entitygen.DEFAULT_PACKAGE=model
 org.eclipse.jpt.core.platform=eclipselink2_5
 org.eclipse.jpt.jpa.core.discoverAnnotatedClasses=false
+problem.EMBEDDED_ID_CLASS_SHOULD_BE_PUBLIC=error
+problem.PERSISTENT_ATTRIBUTE_PUBLIC_FIELD=error
+problem.PROJECT_NO_CONNECTION=ignore
+problem.TYPE_MAPPING_ID_CLASS_PROPERTY_METHOD_NOT_PUBLIC=error
+workspace_validation_preferences_overridden=true
