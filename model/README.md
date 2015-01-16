@@ -1,3 +1,14 @@
-# Minor Hockey Association
+# Minor Hockey Association - Model
 
-This is an open source project developing a cloud based web & mobile solution for the operation of minor Hockey Associations.
+## Admin
+* User
+* Person
+* Role
+** Official
+*** Player
+*** Coach
+*** Trainer
+*** Manager
+** Admin
+
+
