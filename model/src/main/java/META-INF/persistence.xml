@@ -10,6 +10,7 @@
 		<class>hockey.model.Customer</class>
 		<class>hockey.model.Person</class>
 		<class>hockey.model.PhoneNumber</class>
+		<class>hockey.model.team.Player</class>
 		<class>hockey.model.team.Team</class>
 
 		<properties>
