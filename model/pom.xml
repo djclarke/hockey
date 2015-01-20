@@ -50,6 +50,11 @@
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
 		</dependency>
+		<dependency>
+			<groupId>org.mnode.ical4j</groupId>
+			<artifactId>ical4j</artifactId>
+			<version>1.0.6</version>
+		</dependency>
 	</dependencies>
 
 	<build>

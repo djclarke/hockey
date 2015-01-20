@@ -8,7 +8,9 @@
 		<class>hockey.model.Address</class>
 		<class>hockey.model.BaseEntity</class>
 		<class>hockey.model.Customer</class>
+		<class>hockey.model.Email</class>
 		<class>hockey.model.Person</class>
+		<class>hockey.model.Phone</class>
 		<class>hockey.model.PhoneNumber</class>
 		<class>hockey.model.team.Player</class>
 		<class>hockey.model.team.Team</class>

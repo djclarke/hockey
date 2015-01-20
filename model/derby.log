@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Thu Jan 15 11:42:34 PST 2015:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-014a-ef1e-6491-000005393310 
-on database directory /Users/djclarke/git/github/hockey/model/target/derby/hockey  with class loader sun.misc.Launcher$AppClassLoader@5eb1404f 
+Tue Jan 20 04:23:31 EST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-014b-06a7-70eb-000005bb8460 
+on database directory /Users/djclarke/git/github/hockey/model/target/derby/test  with class loader sun.misc.Launcher$AppClassLoader@4821e115 
 Loaded from file:/Users/djclarke/.m2/repository/org/apache/derby/derby/10.9.1.0/derby-10.9.1.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.7.0_51-b13
