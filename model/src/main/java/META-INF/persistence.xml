@@ -7,13 +7,19 @@
 
 		<class>hockey.model.Address</class>
 		<class>hockey.model.BaseEntity</class>
+		<class>hockey.model.Category</class>
 		<class>hockey.model.Customer</class>
+		<class>hockey.model.Division</class>
 		<class>hockey.model.Email</class>
 		<class>hockey.model.Person</class>
 		<class>hockey.model.Phone</class>
 		<class>hockey.model.PhoneNumber</class>
+		<class>hockey.model.Season</class>
+		<class>hockey.model.events.Event</class>
+		<class>hockey.model.events.Game</class>
 		<class>hockey.model.team.Player</class>
 		<class>hockey.model.team.Team</class>
+		<class>hockey.model.team.TeamPlayer</class>
 
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:derby:target/derby/test;create=true" />

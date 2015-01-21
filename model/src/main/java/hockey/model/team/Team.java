@@ -1,10 +1,23 @@
 package hockey.model.team;
 
+import hockey.model.BaseEntity;
+import hockey.model.Category;
+
 import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.FetchType;
+import javax.persistence.ManyToOne;
 
 @Entity
-public class Team {
+public class Team extends BaseEntity{
 
-	@Id	private long id;
+    @ManyToOne(fetch=FetchType.LAZY)
+    private Category category;
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 }

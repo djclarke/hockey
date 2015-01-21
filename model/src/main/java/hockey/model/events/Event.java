@@ -1,9 +1,19 @@
 package hockey.model.events;
 
-import java.util.Calendar;
-
 import hockey.model.BaseEntity;
 
+import java.util.Calendar;
+
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+@Inheritance(strategy=InheritanceType.JOINED)
+@DiscriminatorColumn(name="ETYPE")
 public abstract class Event extends BaseEntity {
     
     private String name;
@@ -11,6 +21,7 @@ public abstract class Event extends BaseEntity {
     /**
      * Start time of the event
      */
+    @Temporal(TemporalType.TIMESTAMP)
     private Calendar date;
     
     /**
