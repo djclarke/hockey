@@ -9,6 +9,7 @@ import hockey.model.events.Game;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,12 +38,13 @@ public class CalenderBuilderTest {
     
     @Test
     public void loadADS() throws IOException, ParserException {
-        FileInputStream fin = new FileInputStream("ADS.ics");
+       InputStream in = Thread.currentThread().getContextClassLoader().getResourceAsStream("ADS.ics");
 
         CalendarBuilder builder = new CalendarBuilder();
 
-        Calendar calendar = builder.build(fin);
+        Calendar calendar = builder.build(in);
         
+        calendar.toString();
     }
 
 }
