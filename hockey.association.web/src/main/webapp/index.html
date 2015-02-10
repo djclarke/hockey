@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="US-ASCII">
+<title>Hockey Association</title>
+<link rel="SHORTCUT ICON" href="ngha.ico">
+<link rel="stylesheet" type="text/css" href="./css/menu.css">
+<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<h1 id="logo">My Hockey Association</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="menu.html">Home</a></li>
+			<li><a href="teams.html">Teams <span class="caret"></span></a>
+				<div>
+					<ul>
+						<li><a href="products.html#chair">FUNdamentals <span
+								class="caret"></span></a>
+							<div>
+								<ul>
+									<li><a href="#">FUN1</a></li>
+									<li><a href="#">FUN2</a></li>
+								</ul>
+							</div></li>
+						<li><a href="products.html#table">Novice <span
+								class="caret"></span></a>
+							<div>
+								<ul>
+									<li><a href="#">NH1 </a></li>
+									<li><a href="#">NH2 </a></li>
+								</ul>
+							</div></li>
+						<li><a href="teams.html?l=atom">Atom <span class="caret"></span></a>
+							<div>
+								<ul>
+									<li><a href="#">AH1 </a></li>
+									<li><a href="#">AH2 - Lightning Cats </a></li>
+									<li><a href="#">AH3 </a></li>
+									<li><a href="#">AH4 </a></li>
+									<li><a href="#">AH5 </a></li>
+									<li><a href="#">AH6 </a></li>
+									<li><a href="#">AH7 </a></li>
+									<li><a href="#">AH8 </a></li>
+									<li><a href="#">ADS WILDCATS </a></li>
+								</ul>
+							</div></li>
+						<li><a href="teams.html?l=atom">Peewee <span
+								class="caret"></span></a>
+							<div>
+								<ul>
+									<li><a href="#">AH1 </a></li>
+									<li><a href="#">AH2 - Lightning Cats </a></li>
+									<li><a href="#">AH3 </a></li>
+									<li><a href="#">AH4 </a></li>
+									<li><a href="#">AH5 </a></li>
+									<li><a href="#">AH6 </a></li>
+									<li><a href="#">AH7 </a></li>
+									<li><a href="#">AH8 </a></li>
+									<li><a href="#">ADS WILDCATS </a></li>
+								</ul>
+							</div></li>
+						<li><a href="teams.html?l=atom">Bantam <span
+								class="caret"></span></a>
+							<div>
+								<ul>
+									<li><a href="#">AH1 </a></li>
+									<li><a href="#">AH2 - Lightning Cats </a></li>
+									<li><a href="#">AH3 </a></li>
+									<li><a href="#">AH4 </a></li>
+									<li><a href="#">AH5 </a></li>
+									<li><a href="#">AH6 </a></li>
+									<li><a href="#">AH7 </a></li>
+									<li><a href="#">AH8 </a></li>
+									<li><a href="#">ADS WILDCATS </a></li>
+								</ul>
+							</div></li>
+						<li><a href="teams.html?l=atom">Midget <span
+								class="caret"></span></a>
+							<div>
+								<ul>
+									<li><a href="#">AH1 </a></li>
+									<li><a href="#">AH2 - Lightning Cats </a></li>
+									<li><a href="#">AH3 </a></li>
+									<li><a href="#">AH4 </a></li>
+									<li><a href="#">AH5 </a></li>
+									<li><a href="#">AH6 </a></li>
+									<li><a href="#">AH7 </a></li>
+									<li><a href="#">AH8 </a></li>
+									<li><a href="#">ADS WILDCATS </a></li>
+								</ul>
+							</div></li>
+
+
+					</ul>
+				</div></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="help.html" style="align: right">Restricted</a></li>
+		</ul>
+	</nav>
+
+	<script type="text/javascript">
+		$('#json').click(
+				function() {
+					alert('json');
+					$.getJSON("http://localhost:8080/restws/json/product/get",
+							function(data) {
+								alert(data);
+							});
+				});
+
+		$('#ajax').click(function() {
+			alert('ajax');
+			$.ajax({
+				type : "GET",
+				dataType : "json",
+				url : "http://localhost:8080/restws/json/product/get",
+				success : function(data) {
+					alert(data);
+				}
+			});
+		});
+	</script>
+</body>
+</html>

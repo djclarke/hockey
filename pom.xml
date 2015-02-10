@@ -30,8 +30,8 @@
 	</developers>
     
     <modules>
-        <module>model</module>
-        <module>web</module>
+        <module>hockey.association.model</module>
+        <module>hockey.association.web</module>
     </modules>
 
     <properties>
